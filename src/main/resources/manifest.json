@@ -1,9 +1,11 @@
 {
-  "Group": "MyMods",
+  "author": "uaarthur",
+  "Group": "uaarthur",
   "Name": "HelloWorld",
   "Version": "1.0.0",
   "Main": "net.hntdstudio.hytale.Main",
   "ServerVersion": ">=0.0.1",
   "Dependencies": {},
-  "OptionalDependencies": {}
+  "OptionalDependencies": {},
+  "IncludesAssetPack": true
 }
