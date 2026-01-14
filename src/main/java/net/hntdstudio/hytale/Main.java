@@ -4,8 +4,9 @@ import com.hypixel.hytale.server.core.command.system.CommandManager;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import net.hntdstudio.hytale.commands.HelloWorld_CMD;
-import net.hntdstudio.hytale.commands.UpdateHUD_CMD;
-import net.hntdstudio.hytale.events.PlayerJoinListener;
+import net.hntdstudio.hytale.commands.UpdatePage_CMD;
+import net.hntdstudio.hytale.commands.UpdateUI_CMD;
+import net.hntdstudio.hytale.listeners.PlayerJoinListener;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
 import net.hntdstudio.hytale.api.events.ListenerRegister;
@@ -22,9 +23,11 @@ public class Main extends JavaPlugin {
 
         System.out.println("Hello world lol!");
         CommandManager.get().register(new HelloWorld_CMD("helloworld", ""));
-        CommandManager.get().register(new UpdateHUD_CMD("updateUIHelloWorld", ""));
+        CommandManager.get().register(new UpdateUI_CMD("updateUI", ""));
+        CommandManager.get().register(new UpdatePage_CMD("updatePage", ""));
 
         ListenerRegister registrar = new ListenerRegister(getEventRegistry());
             registrar.registerListener(new PlayerJoinListener());
+
     }
 }
