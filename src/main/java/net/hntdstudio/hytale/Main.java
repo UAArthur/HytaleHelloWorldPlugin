@@ -8,7 +8,7 @@ import net.hntdstudio.hytale.commands.UpdateHUD_CMD;
 import net.hntdstudio.hytale.events.PlayerJoinListener;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
-import net.hntdstudio.hytale.internal.events.ListenerRegister;
+import net.hntdstudio.hytale.api.events.ListenerRegister;
 public class Main extends JavaPlugin {
 
     public Main(@NonNullDecl JavaPluginInit init) {
@@ -25,6 +25,6 @@ public class Main extends JavaPlugin {
         CommandManager.get().register(new UpdateHUD_CMD("updateUIHelloWorld", ""));
 
         ListenerRegister registrar = new ListenerRegister(getEventRegistry());
-        registrar.registerListener(new PlayerJoinListener());
+            registrar.registerListener(new PlayerJoinListener());
     }
 }

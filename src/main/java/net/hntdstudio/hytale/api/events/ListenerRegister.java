@@ -1,4 +1,4 @@
-package net.hntdstudio.hytale.internal.events;
+package net.hntdstudio.hytale.api.events;
 
 import com.hypixel.hytale.event.EventRegistry;
 import com.hypixel.hytale.event.IBaseEvent;

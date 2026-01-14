@@ -8,7 +8,7 @@ import net.hntdstudio.hytale.api.events.EventHandler;
 public class PlayerJoinListener {
 
     @EventHandler
-    public static void OnPlayerConnect(PlayerConnectEvent event) {
+    public void OnPlayerConnect(PlayerConnectEvent event) {
         Player player = event.getHolder().getComponent(Player.getComponentType());
         assert player != null;
 
