@@ -15,4 +15,5 @@ public class HelloWorldHud extends CustomUIHud {
     protected void build(@NonNullDecl UICommandBuilder uiCommandBuilder) {
         uiCommandBuilder.append("Hud/HelloWorld.ui");
     }
+
 }
