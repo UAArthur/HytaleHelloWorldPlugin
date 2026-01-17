@@ -1,4 +1,4 @@
-package net.hntdstudio.hytale.pages;
+package net.hntdstudio.hytale.ui.pages;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;

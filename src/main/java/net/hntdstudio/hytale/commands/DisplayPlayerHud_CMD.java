@@ -5,17 +5,15 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractPlayerCommand;
 import com.hypixel.hytale.server.core.entity.entities.Player;
-import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.entity.entities.player.hud.HudManager;
-import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import net.hntdstudio.hytale.hud.HelloWorldHud;
+import net.hntdstudio.hytale.ui.hud.HelloWorldHud;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
-public class UpdateHUD_CMD extends AbstractPlayerCommand {
-    public UpdateHUD_CMD(@NonNullDecl String name, @NonNullDecl String description) {
+public class DisplayPlayerHud_CMD extends AbstractPlayerCommand {
+    public DisplayPlayerHud_CMD(@NonNullDecl String name, @NonNullDecl String description) {
         super(name, description);
     }
 

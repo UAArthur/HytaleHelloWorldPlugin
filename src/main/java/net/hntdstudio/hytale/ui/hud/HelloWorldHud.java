@@ -1,4 +1,4 @@
-package net.hntdstudio.hytale.hud;
+package net.hntdstudio.hytale.ui.hud;
 
 import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
